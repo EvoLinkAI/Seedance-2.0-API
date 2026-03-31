@@ -1,4 +1,4 @@
-# Awesome Seedance 2.0 API
+# Seedance 2.0 API Price, Models, and Video Generation Guide
 
 <p align="center">
   <a href="https://evolink.ai/seedance-2-0?utm_source=github&utm_medium=banner&utm_campaign=seedance-2-api">
@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  Text to video, image to video, and reference to video with one unified Seedance 2.0 API.
+  Seedance 2.0 API price, models, text-to-video, image-to-video, and reference-to-video in one unified guide.
 </p>
 
 <p align="left">
@@ -27,11 +27,13 @@ Seedance 2.0 API is a video generation API for creating AI videos from text prom
 
 This repository is designed for developers who want to:
 
-- integrate Seedance 2.0 quickly
+- understand Seedance 2.0 API price and model differences
+- rank for searches like `Seedance 2.0 API`, `Seedance 2 API price`, and `Seedance API pricing`
 - compare text-to-video, image-to-video, and reference-to-video modes
 - understand the difference between standard and fast models
 - copy production-ready request examples
 - estimate pricing before shipping
+- discover related Seedance resources across the EvoLinkAI GitHub ecosystem
 
 ## Supported Seedance 2.0 Models
 
@@ -167,7 +169,7 @@ Docs:
 - [Reference-to-Video Guide](./docs/reference-to-video.md)
 - [Fast Models Guide](./docs/fast-models.md)
 
-## Pricing
+## Seedance 2.0 API Price
 
 ### Output pricing
 
@@ -378,6 +380,12 @@ seedance-2-api/
     ├── nodejs/
     └── python/
 ```
+
+## Related Seedance Repositories
+
+- [Seedance 2.0 Price and API Guide](https://github.com/EvoLinkAI/Seedance-2.0-API) — this repository
+- [Seedance 2 Video Gen Skill for OpenClaw](https://github.com/EvoLinkAI/seedance2-video-gen-skill-for-openclaw) — OpenClaw skill integration for Seedance workflows
+- [Awesome Seedance 2 Guide](https://github.com/EvoLinkAI/awesome-seedance-2-guide) — broader Seedance ecosystem guide and discovery entry
 
 ## Related Links
 
