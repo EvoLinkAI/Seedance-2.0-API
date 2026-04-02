@@ -1,3 +1,30 @@
+# Seedance 2.0 Text-to-Video Guide
+
+This page covers both the standard and fast text-to-video models for Seedance 2.0.
+
+## Supported models
+
+- `seedance-2.0-text-to-video`
+- `seedance-2.0-fast-text-to-video`
+
+## Model overview
+
+- Standard model: balanced for general generation quality
+- Fast model: better for rapid iteration and shorter feedback loops
+- Both use the same async task workflow
+
+## Endpoint
+
+```http
+POST https://api.evolink.ai/v1/videos/generations
+```
+
+```http
+GET https://api.evolink.ai/v1/tasks/{task_id}
+```
+
+## Fast model reference
+
 # Seedance 2.0 Fast Text-to-Video API Reference
 
 > - Generate videos from pure text prompts with faster processing speed; supports web search for enhanced timeliness
@@ -146,5 +173,16 @@ Cost = Output video duration (seconds) x Resolution unit price
 
 ---
 
-> **Early Access:** You can integrate against the docs today. Once Seedance API opens up, we’ll notify early-access users.
+## Standard model note
 
+The standard `seedance-2.0-text-to-video` model follows the same overall request pattern:
+
+- input: `prompt`
+- optional controls: `duration`, `quality`, `aspect_ratio`, `generate_audio`, `callback_url`
+- async output via task polling
+
+If you are documenting public integrations, use this page as the shared text-to-video reference and switch only the `model` field.
+
+---
+
+> **Early Access:** You can integrate against the docs today. Once Seedance API opens up, we’ll notify early-access users.

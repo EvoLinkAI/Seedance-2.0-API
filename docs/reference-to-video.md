@@ -1,3 +1,20 @@
+# Seedance 2.0 Reference-to-Video Guide
+
+This page covers both the standard and fast reference-to-video models for Seedance 2.0.
+
+## Supported models
+
+- `seedance-2.0-reference-to-video`
+- `seedance-2.0-fast-reference-to-video`
+
+## Shared capabilities
+
+- multimodal generation with image, video, audio, and prompt inputs
+- supports generation, editing, extension, and guided creative workflows
+- async task workflow with task polling
+
+## Fast model reference
+
 # Seedance 2.0 Fast Reference-to-Video Multimodal API Reference
 
 > - Input reference images (0--9) + reference videos (0--3) + reference audio (0--3) + text prompt to generate video
@@ -238,5 +255,17 @@ Cost = (Billable input duration + Output video duration) (seconds) × Resolution
 
 ---
 
-> **Early Access:** You can integrate against the docs today. Once Seedance API opens up, we’ll notify early-access users.
+## Standard model note
 
+The standard `seedance-2.0-reference-to-video` model uses the same multimodal request pattern:
+
+- `image_urls`: up to 9
+- `video_urls`: up to 3
+- `audio_urls`: up to 3
+- audio cannot be supplied alone
+
+For implementation, the main field that changes is usually the `model` name.
+
+---
+
+> **Early Access:** You can integrate against the docs today. Once Seedance API opens up, we’ll notify early-access users.

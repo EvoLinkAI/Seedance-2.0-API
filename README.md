@@ -383,6 +383,14 @@ seedance-2-api/
     └── python/
 ```
 
+## Documentation
+
+- [Text-to-Video Guide](./docs/text-to-video.md)
+- [Image-to-Video Guide](./docs/image-to-video.md)
+- [Reference-to-Video Guide](./docs/reference-to-video.md)
+- [Fast Models Guide](./docs/fast-models.md)
+- [Pricing](./docs/pricing.md)
+
 ## Related Seedance Repositories
 
 - [Seedance 2.0 Price and API Guide](https://github.com/EvoLinkAI/Seedance-2.0-API) — this repository
