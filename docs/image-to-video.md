@@ -4,6 +4,9 @@ This page covers both the standard and fast image-to-video models for Seedance 2
 
 ## Supported models
 
+See also: [Pricing](./pricing.md)
+
+
 - `seedance-2.0-image-to-video`
 - `seedance-2.0-fast-image-to-video`
 

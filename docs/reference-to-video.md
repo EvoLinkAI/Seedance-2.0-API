@@ -4,6 +4,9 @@ This page covers both the standard and fast reference-to-video models for Seedan
 
 ## Supported models
 
+See also: [Pricing](./pricing.md)
+
+
 - `seedance-2.0-reference-to-video`
 - `seedance-2.0-fast-reference-to-video`
 

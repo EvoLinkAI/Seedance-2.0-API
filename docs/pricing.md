@@ -1,39 +1,76 @@
-# Seedance 2.0 Pricing Guide
+# Seedance 2.0 Pricing
 
-## Resolution pricing
+This page summarizes the pricing currently documented in this repository.
 
-| Resolution | Price |
-|---|---:|
-| `480p` | 4.63 credits / second |
-| `720p` | 10.00 credits / second |
+## Standard models
 
-## Standard pricing rule
+### Text-to-Video
 
-For text-to-video and image-to-video:
+| Resolution | Unit Price |
+|:----------:|:----------:|
+| 480p | $0.07276 (5.093 credits) /sec |
+| 720p | $0.15715 (11.00 credits) /sec |
+| WebSearch | $0.00058 (0.04 credits) /call |
 
-```text
-cost = output video duration × resolution price
-```
+### Image-to-Video
 
-## Reference-to-video pricing rule
+| Resolution | Unit Price |
+|:----------:|:----------:|
+| 480p | $0.07276 (5.093 credits) /sec |
+| 720p | $0.15715 (11.00 credits) /sec |
 
-For reference-to-video with input videos:
+### Reference-to-Video
 
-```text
-cost = (input reference video duration + output video duration) × resolution price
-```
+**Without video input:**
 
-### Example
+| Resolution | Unit Price |
+|:----------:|:----------:|
+| 480p | $0.07276 (5.093 credits) /sec |
+| 720p | $0.15715 (11.00 credits) /sec |
 
-If you upload two reference videos with total duration `8s` and generate a `10s` output at `720p`:
+**With video input:**
 
-```text
-cost = (8 + 10) × 10 = 180 credits
-```
+| Resolution | Unit Price |
+|:----------:|:----------:|
+| 480p | $0.04431 (3.1017 credits) /sec |
+| 720p | $0.09570 (6.699 credits) /sec |
 
-## Additional billing notes
+## Fast models
 
-- audio generation has no extra charge
-- web search costs `0.04` credits per actual search call
-- smart duration (`-1`) reserves 10 seconds first, then settles against the actual duration
-- 1 credit = 10,000 UC = ¥0.10
+### Fast Text-to-Video
+
+| Resolution | Unit Price |
+|:----------:|:----------:|
+| 480p | $0.0590 (4.1254 credits) /sec |
+| 720p | $0.1273 (8.9100 credits) /sec |
+| WebSearch | $0.00058 (0.04 credits) /call |
+
+### Fast Image-to-Video
+
+| Resolution | Unit Price |
+|:----------:|:----------:|
+| 480p | $0.0590 (4.1254 credits) /sec |
+| 720p | $0.1273 (8.9100 credits) /sec |
+
+### Fast Reference-to-Video
+
+**Without video input:**
+
+| Resolution | Unit Price |
+|:----------:|:----------:|
+| 480p | $0.0590 (4.1254 credits) /sec |
+| 720p | $0.1273 (8.9100 credits) /sec |
+
+**With video input:**
+
+| Resolution | Unit Price |
+|:----------:|:----------:|
+| 480p | $0.0351 (2.4546 credits) /sec |
+| 720p | $0.0758 (5.3015 credits) /sec |
+
+## Billing notes
+
+- Text-to-video and image-to-video are billed by output video duration and selected resolution.
+- Reference-to-video with video inputs uses a minimum-duration billing rule for input video duration.
+- Generated audio does not incur additional charges.
+- Web search is billed separately and only when actually triggered.

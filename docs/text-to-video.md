@@ -4,6 +4,9 @@ This page covers both the standard and fast text-to-video models for Seedance 2.
 
 ## Supported models
 
+See also: [Pricing](./pricing.md)
+
+
 - `seedance-2.0-text-to-video`
 - `seedance-2.0-fast-text-to-video`
 

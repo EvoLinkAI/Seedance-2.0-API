@@ -391,6 +391,8 @@ seedance-2-api/
 - [Fast Models Guide](./docs/fast-models.md)
 - [Pricing](./docs/pricing.md)
 
+These docs now cover both **standard** and **fast** variants for text-to-video, image-to-video, and reference-to-video.
+
 ## Related Seedance Repositories
 
 - [Seedance 2.0 Price and API Guide](https://github.com/EvoLinkAI/Seedance-2.0-API) — this repository
