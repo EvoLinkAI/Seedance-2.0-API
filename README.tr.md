@@ -4,8 +4,12 @@
 
 <p align="center">
   <a href="https://evolink.ai/seedance-2-0?utm_source=github&utm_medium=banner&utm_campaign=seedance-2-api">
-    <img src="./assets/banner.jpg" alt="Seedance 2.0 Gateway Service" width="100%" />
+    <img src="./assets/banner.jpg" alt="Seedance 2.0 Human Face Now Available Try Now" width="100%" />
   </a>
+</p>
+
+<p align="center">
+  <strong>Seedance 2.0<br>Human Face Now Available<br>Try Now</strong>
 </p>
 
 <p align="center">
@@ -15,7 +19,7 @@
 <p align="left">
   <a href="https://evolink.ai/seedance-2-0?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">Seedance 2.0 fiyatlarını görüntüle</a> ·
   <a href="https://evolink.ai/signup?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">API anahtarı al</a> ·
-  <a href="https://docs.evolink.ai">API belgelerini oku</a>
+  <a href="https://docs.evolink.ai?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">API belgelerini oku</a>
 </p>
 
 ## Seedance 2.0 Gateway Service nedir?
@@ -152,8 +156,8 @@ maliyet = çıktı video süresi × çözünürlük fiyatı
 
 | Çözünürlük | Fiyat |
 |---|---:|
-| `480p` | saniye başına 4.63 kredi |
-| `720p` | saniye başına 10.00 kredi |
+| `480p` | saniye başına 5.556 kredi |
+| `720p` | saniye başına 12.00 kredi |
 
 ### Reference-to-video fiyatlandırması
 

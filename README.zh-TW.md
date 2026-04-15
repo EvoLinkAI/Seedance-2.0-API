@@ -4,8 +4,12 @@
 
 <p align="center">
   <a href="https://evolink.ai/seedance-2-0?utm_source=github&utm_medium=banner&utm_campaign=seedance-2-api">
-    <img src="./assets/banner.jpg" alt="Seedance 2.0 Gateway Service" width="100%" />
+    <img src="./assets/banner.jpg" alt="Seedance 2.0 Human Face Now Available Try Now" width="100%" />
   </a>
+</p>
+
+<p align="center">
+  <strong>Seedance 2.0<br>Human Face Now Available<br>Try Now</strong>
 </p>
 
 <p align="center">
@@ -15,7 +19,7 @@
 <p align="left">
   <a href="https://evolink.ai/seedance-2-0?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">查看 Seedance 2.0 價格</a> ·
   <a href="https://evolink.ai/signup?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">取得 API Key</a> ·
-  <a href="https://docs.evolink.ai">閱讀 API 文件</a>
+  <a href="https://docs.evolink.ai?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">閱讀 API 文件</a>
 </p>
 
 ## 什麼是 Seedance 2.0 Gateway Service？
@@ -182,8 +186,8 @@ GET https://api.evolink.ai/v1/tasks/{task_id}
 
 | 解析度 | 價格 |
 |---|---:|
-| `480p` | 4.63 積分 / 秒 |
-| `720p` | 10.00 積分 / 秒 |
+| `480p` | 5.556 積分 / 秒 |
+| `720p` | 12.00 積分 / 秒 |
 
 ### Reference 視訊計費
 

@@ -4,8 +4,12 @@
 
 <p align="center">
   <a href="https://evolink.ai/seedance-2-0?utm_source=github&utm_medium=banner&utm_campaign=seedance-2-api">
-    <img src="./assets/banner.jpg" alt="Seedance 2.0 Gateway Service" width="100%" />
+    <img src="./assets/banner.jpg" alt="Seedance 2.0 Human Face Now Available Try Now" width="100%" />
   </a>
+</p>
+
+<p align="center">
+  <strong>Seedance 2.0<br>Human Face Now Available<br>Try Now</strong>
 </p>
 
 <p align="center">
@@ -15,7 +19,7 @@
 <p align="left">
   <a href="https://evolink.ai/seedance-2-0?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">Посмотреть цены Seedance 2.0</a> ·
   <a href="https://evolink.ai/signup?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">Получить API Key</a> ·
-  <a href="https://docs.evolink.ai">Открыть API документацию</a>
+  <a href="https://docs.evolink.ai?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">Открыть API документацию</a>
 </p>
 
 ## Что такое Seedance 2.0 Gateway Service?
@@ -152,8 +156,8 @@ GET https://api.evolink.ai/v1/tasks/{task_id}
 
 | Разрешение | Цена |
 |---|---:|
-| `480p` | 4.63 кредита / секунда |
-| `720p` | 10.00 кредита / секунда |
+| `480p` | 5.556 кредита / секунда |
+| `720p` | 12.00 кредита / секунда |
 
 ### Стоимость для reference-to-video
 

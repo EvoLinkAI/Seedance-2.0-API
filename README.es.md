@@ -4,8 +4,12 @@
 
 <p align="center">
   <a href="https://evolink.ai/seedance-2-0?utm_source=github&utm_medium=banner&utm_campaign=seedance-2-api">
-    <img src="./assets/banner.jpg" alt="Seedance 2.0 Gateway Service" width="100%" />
+    <img src="./assets/banner.jpg" alt="Seedance 2.0 Human Face Now Available Try Now" width="100%" />
   </a>
+</p>
+
+<p align="center">
+  <strong>Seedance 2.0<br>Human Face Now Available<br>Try Now</strong>
 </p>
 
 <p align="center">
@@ -15,7 +19,7 @@
 <p align="left">
   <a href="https://evolink.ai/seedance-2-0?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">Ver precios de Seedance 2.0</a> ·
   <a href="https://evolink.ai/signup?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">Obtener API Key</a> ·
-  <a href="https://docs.evolink.ai">Leer documentación API</a>
+  <a href="https://docs.evolink.ai?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">Leer documentación API</a>
 </p>
 
 ## ¿Qué es el Seedance 2.0 Gateway Service?
@@ -151,8 +155,8 @@ costo = duración del video de salida × precio por resolución
 
 | Resolución | Precio |
 |---|---:|
-| `480p` | 4.63 créditos / segundo |
-| `720p` | 10.00 créditos / segundo |
+| `480p` | 5.556 créditos / segundo |
+| `720p` | 12.00 créditos / segundo |
 
 ### Precio para reference-to-video
 

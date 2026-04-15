@@ -4,8 +4,12 @@
 
 <p align="center">
   <a href="https://evolink.ai/seedance-2-0?utm_source=github&utm_medium=banner&utm_campaign=seedance-2-api">
-    <img src="./assets/banner.jpg" alt="Seedance 2.0 Gateway Service" width="100%" />
+    <img src="./assets/banner.jpg" alt="Seedance 2.0 Human Face Now Available Try Now" width="100%" />
   </a>
+</p>
+
+<p align="center">
+  <strong>Seedance 2.0<br>Human Face Now Available<br>Try Now</strong>
 </p>
 
 <p align="center">
@@ -15,7 +19,7 @@
 <p align="left">
   <a href="https://evolink.ai/seedance-2-0?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">Seedance 2.0 の価格を見る</a> ·
   <a href="https://evolink.ai/signup?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">API キーを取得</a> ·
-  <a href="https://docs.evolink.ai">API ドキュメントを読む</a>
+  <a href="https://docs.evolink.ai?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">API ドキュメントを読む</a>
 </p>
 
 ## Seedance 2.0 Gateway Service とは？
@@ -152,8 +156,8 @@ GET https://api.evolink.ai/v1/tasks/{task_id}
 
 | 解像度 | 価格 |
 |---|---:|
-| `480p` | 4.63 クレジット / 秒 |
-| `720p` | 10.00 クレジット / 秒 |
+| `480p` | 5.556 クレジット / 秒 |
+| `720p` | 12.00 クレジット / 秒 |
 
 ### Reference-to-video の料金
 

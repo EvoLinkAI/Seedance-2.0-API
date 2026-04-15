@@ -4,8 +4,12 @@
 
 <p align="center">
   <a href="https://evolink.ai/seedance-2-0?utm_source=github&utm_medium=banner&utm_campaign=seedance-2-api">
-    <img src="./assets/banner.jpg" alt="Seedance 2.0 Gateway Service" width="100%" />
+    <img src="./assets/banner.jpg" alt="Seedance 2.0 Human Face Now Available Try Now" width="100%" />
   </a>
+</p>
+
+<p align="center">
+  <strong>Seedance 2.0<br>Human Face Now Available<br>Try Now</strong>
 </p>
 
 <p align="center">
@@ -15,7 +19,7 @@
 <p align="left">
   <a href="https://evolink.ai/seedance-2-0?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">View Seedance 2.0 Pricing</a> ·
   <a href="https://evolink.ai/signup?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">Get API Key</a> ·
-  <a href="https://docs.evolink.ai">Read API Docs</a>
+  <a href="https://docs.evolink.ai?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">Read API Docs</a>
 </p>
 
 ## What Is Seedance 2.0 Gateway Service?
@@ -173,33 +177,95 @@ Docs:
 
 ## Seedance 2.0 Gateway Service Pricing
 
-### Output pricing
+### Standard models
 
-For text-to-video and image-to-video tasks, pricing is based on output duration:
+#### Text-to-video and image-to-video
 
-```text
-cost = output video duration in seconds × resolution price
-```
-
-| Resolution | Price |
-|---|---:|
-| `480p` | 4.63 credits / second |
-| `720p` | 10.00 credits / second |
-
-### Reference video pricing
-
-For reference-to-video tasks, input reference video duration is also billed:
+For standard text-to-video and image-to-video tasks, pricing is based on output duration:
 
 ```text
-cost = (input reference video duration + output video duration) × resolution price
+cost = output video duration in seconds × resolution unit price
 ```
+
+| Resolution | USD / sec | Credits / sec |
+|---|---:|---:|
+| `480p` | $0.0817 | 5.556 |
+| `720p` | $0.1765 | 12.00 |
+
+`web_search` is billed separately at `$0.0006 / call` or `0.04 credits / call`, only when actually triggered.
+
+#### Reference-to-video
+
+Without reference video:
+
+```text
+cost = output video duration in seconds × resolution unit price
+```
+
+| Resolution | USD / sec | Credits / sec |
+|---|---:|---:|
+| `480p` | $0.0817 | 5.556 |
+| `720p` | $0.1765 | 12.00 |
+
+With reference video:
+
+```text
+billable input duration = max(total input video duration, output video duration)
+cost = (billable input duration + output video duration) × resolution unit price
+```
+
+| Resolution | USD / sec | Credits / sec |
+|---|---:|---:|
+| `480p` | $0.0498 | 3.3836 |
+| `720p` | $0.1075 | 7.308 |
+
+### Fast models
+
+#### Fast text-to-video and fast image-to-video
+
+```text
+cost = output video duration in seconds × resolution unit price
+```
+
+| Resolution | USD / sec | Credits / sec |
+|---|---:|---:|
+| `480p` | $0.0662 | 4.5004 |
+| `720p` | $0.1429 | 9.72 |
+
+`web_search` is billed separately at `$0.0006 / call` or `0.04 credits / call`, only when actually triggered.
+
+#### Fast reference-to-video
+
+Without reference video:
+
+```text
+cost = output video duration in seconds × resolution unit price
+```
+
+| Resolution | USD / sec | Credits / sec |
+|---|---:|---:|
+| `480p` | $0.0662 | 4.5004 |
+| `720p` | $0.1429 | 9.72 |
+
+With reference video:
+
+```text
+billable input duration = max(total input video duration, output video duration)
+cost = (billable input duration + output video duration) × resolution unit price
+```
+
+| Resolution | USD / sec | Credits / sec |
+|---|---:|---:|
+| `480p` | $0.0394 | 2.6777 |
+| `720p` | $0.0851 | 5.7834 |
 
 ### Extra notes
 
 - audio generation has no extra charge
-- `web_search` costs `0.04` credits per actual search call
+- video duration range is `4-15` seconds
+- generated video URLs are valid for 24 hours
+- a single request may trigger multiple `web_search` calls when enabled
 - smart duration (`-1`) reserves 10 seconds first, then settles by actual output length
-- 1 credit = 10,000 UC = ¥0.10
 
 Detailed breakdown:
 - [Pricing Guide](./docs/pricing.md)
