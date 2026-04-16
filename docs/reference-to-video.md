@@ -234,8 +234,8 @@ Cost = Output video duration (seconds) × Resolution unit price
 
 | Resolution | Unit Price |
 |:----------:|:----------:|
-| 480p | $0.07276 (5.093 credits) /sec |
-| 720p | $0.15715 (11.00 credits) /sec |
+| 480p | $0.0919 (6.251 credits) /sec |
+| 720p | $0.1985 (13.50 credits) /sec |
 
 **With video input:** Input video duration is billed with a minimum duration rule:
 
@@ -244,12 +244,12 @@ Billable input duration = max(Total input video duration, Output video duration)
 Cost = (Billable input duration + Output video duration) (seconds) × Resolution unit price
 ```
 
-> Example: 10s output (720p) with 5s input video → Billable input = max(5, 10) = 10s → Cost = (10 + 10) × $0.09570 = $1.914
+> Example: 10s output (720p) with 5s input video → Billable input = max(5, 10) = 10s → Cost = (10 + 10) × $0.0957 = $1.91
 
 | Resolution | Unit Price |
 |:----------:|:----------:|
-| 480p | $0.04431 (3.1017 credits) /sec |
-| 720p | $0.09570 (6.699 credits) /sec |
+| 480p | $0.0560 (3.807 credits) /sec |
+| 720p | $0.1209 (8.222 credits) /sec |
 
 - **Audio generation:** No additional charge
 
@@ -476,8 +476,8 @@ Cost = Output video duration (seconds) × Resolution unit price
 
 | Resolution | Unit Price |
 |:----------:|:----------:|
-| 480p | $0.0590 (4.1254 credits) /sec |
-| 720p | $0.1273 (8.9100 credits) /sec |
+| 480p | $0.0745 (5.063 credits) /sec |
+| 720p | $0.1608 (10.935 credits) /sec |
 
 **With video input:** Input video duration is billed with a minimum duration rule:
 
@@ -486,12 +486,12 @@ Billable input duration = max(Total input video duration, Output video duration)
 Cost = (Billable input duration + Output video duration) (seconds) × Resolution unit price
 ```
 
-> Example: 10s output (720p) with 5s input video → Billable input = max(5, 10) = 10s → Cost = (10 + 10) × $0.0758 = $1.516
+> Example: 10s output (720p) with 5s input video → Billable input = max(5, 10) = 10s → Cost = (10 + 10) × $0.0957 = $1.91
 
 | Resolution | Unit Price |
 |:----------:|:----------:|
-| 480p | $0.0351 (2.4546 credits) /sec |
-| 720p | $0.0758 (5.3015 credits) /sec |
+| 480p | $0.0443 (3.012 credits) /sec |
+| 720p | $0.0957 (6.506 credits) /sec |
 
 - **Audio generation:** No additional charge
 

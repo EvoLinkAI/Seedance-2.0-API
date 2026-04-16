@@ -10,16 +10,16 @@ This page summarizes the pricing currently documented in this repository.
 
 | Resolution | Unit Price |
 |:----------:|:----------:|
-| 480p | $0.07276 (5.093 credits) /sec |
-| 720p | $0.15715 (11.00 credits) /sec |
-| WebSearch | $0.00058 (0.04 credits) /call |
+| 480p | $0.0919 (6.251 credits) /sec |
+| 720p | $0.1985 (13.50 credits) /sec |
+| WebSearch | $0.0006 (0.04 credits) /call |
 
 ### Image-to-Video
 
 | Resolution | Unit Price |
 |:----------:|:----------:|
-| 480p | $0.07276 (5.093 credits) /sec |
-| 720p | $0.15715 (11.00 credits) /sec |
+| 480p | $0.0919 (6.251 credits) /sec |
+| 720p | $0.1985 (13.50 credits) /sec |
 
 ### Reference-to-Video
 
@@ -27,15 +27,15 @@ This page summarizes the pricing currently documented in this repository.
 
 | Resolution | Unit Price |
 |:----------:|:----------:|
-| 480p | $0.07276 (5.093 credits) /sec |
-| 720p | $0.15715 (11.00 credits) /sec |
+| 480p | $0.0919 (6.251 credits) /sec |
+| 720p | $0.1985 (13.50 credits) /sec |
 
 **With video input:**
 
 | Resolution | Unit Price |
 |:----------:|:----------:|
-| 480p | $0.04431 (3.1017 credits) /sec |
-| 720p | $0.09570 (6.699 credits) /sec |
+| 480p | $0.0560 (3.807 credits) /sec |
+| 720p | $0.1209 (8.222 credits) /sec |
 
 ## Fast models
 
@@ -43,16 +43,16 @@ This page summarizes the pricing currently documented in this repository.
 
 | Resolution | Unit Price |
 |:----------:|:----------:|
-| 480p | $0.0590 (4.1254 credits) /sec |
-| 720p | $0.1273 (8.9100 credits) /sec |
-| WebSearch | $0.00058 (0.04 credits) /call |
+| 480p | $0.0745 (5.063 credits) /sec |
+| 720p | $0.1608 (10.935 credits) /sec |
+| WebSearch | $0.0006 (0.04 credits) /call |
 
 ### Fast Image-to-Video
 
 | Resolution | Unit Price |
 |:----------:|:----------:|
-| 480p | $0.0590 (4.1254 credits) /sec |
-| 720p | $0.1273 (8.9100 credits) /sec |
+| 480p | $0.0745 (5.063 credits) /sec |
+| 720p | $0.1608 (10.935 credits) /sec |
 
 ### Fast Reference-to-Video
 
@@ -60,19 +60,19 @@ This page summarizes the pricing currently documented in this repository.
 
 | Resolution | Unit Price |
 |:----------:|:----------:|
-| 480p | $0.0590 (4.1254 credits) /sec |
-| 720p | $0.1273 (8.9100 credits) /sec |
+| 480p | $0.0745 (5.063 credits) /sec |
+| 720p | $0.1608 (10.935 credits) /sec |
 
 **With video input:**
 
 | Resolution | Unit Price |
 |:----------:|:----------:|
-| 480p | $0.0351 (2.4546 credits) /sec |
-| 720p | $0.0758 (5.3015 credits) /sec |
+| 480p | $0.0443 (3.012 credits) /sec |
+| 720p | $0.0957 (6.506 credits) /sec |
 
 ## Billing notes
 
 - Text-to-video and image-to-video are billed by output video duration and selected resolution.
-- Reference-to-video with video inputs uses a minimum-duration billing rule for input video duration.
+- Reference-to-video with video inputs uses `max(total input video duration, output video duration)` as the billable input duration.
 - Generated audio does not incur additional charges.
 - Web search is billed separately and only when actually triggered.

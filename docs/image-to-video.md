@@ -166,8 +166,8 @@ Cost = output video duration (seconds) × resolution unit price
 
 | Resolution | Unit Price |
 |:----------:|:----------:|
-| 480p | $0.07276 (5.093 credits) /sec |
-| 720p | $0.15715 (11.00 credits) /sec |
+| 480p | $0.0919 (6.251 credits) /sec |
+| 720p | $0.1985 (13.50 credits) /sec |
 
 - **Audio generation:** No additional charge
 
@@ -327,8 +327,8 @@ Cost = Output video duration (seconds) x Resolution unit price
 
 | Resolution | Unit Price |
 |:----------:|:----------:|
-| 480p | $0.0590 (4.1254 credits) /sec |
-| 720p | $0.1273 (8.9100 credits) /sec |
+| 480p | $0.0745 (5.063 credits) /sec |
+| 720p | $0.1608 (10.935 credits) /sec |
 
 - **Audio generation:** No additional charge
 

@@ -168,9 +168,9 @@ Cost = output video duration (seconds) × resolution unit price
 
 | Resolution | Unit Price |
 |:----------:|:----------:|
-| 480p | $0.07276 (5.093 credits) /sec |
-| 720p | $0.15715 (11.00 credits) /sec |
-| WebSearch | $0.00058 (0.04 credits) /call |
+| 480p | $0.0919 (6.251 credits) /sec |
+| 720p | $0.1985 (13.50 credits) /sec |
+| WebSearch | $0.0006 (0.04 credits) /call |
 
 - **Web search:** Billed separately; charged only when actually triggered (a single request may trigger multiple searches)
 - **Audio generation:** No additional charge
@@ -318,9 +318,9 @@ Cost = Output video duration (seconds) x Resolution unit price
 
 | Resolution | Unit Price |
 |:----------:|:----------:|
-| 480p | $0.0590 (4.1254 credits) /sec |
-| 720p | $0.1273 (8.9100 credits) /sec |
-| WebSearch | $0.00058 (0.04 credits) /call |
+| 480p | $0.0745 (5.063 credits) /sec |
+| 720p | $0.1608 (10.935 credits) /sec |
+| WebSearch | $0.0006 (0.04 credits) /call |
 
 - **Web search:** Billed separately; charged only when actually triggered (a single request may trigger multiple searches)
 - **Audio generation:** No additional charge
