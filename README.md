@@ -22,6 +22,34 @@
   <a href="https://docs.evolink.ai?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">Read Seedance 2.0 API docs</a>
 </p>
 
+## EvoLink Quick Start
+
+Create a Seedance 2.0 video task through the EvoLink API:
+
+- [Open the Seedance 2.0 model page](https://evolink.ai/seedance-2-0?utm_source=github&utm_medium=readme&utm_campaign=Seedance-2.0-Gateway-Service)
+- [Read Seedance 2.0 API docs](https://docs.evolink.ai?utm_source=github&utm_medium=readme&utm_campaign=Seedance-2.0-Gateway-Service)
+- [Get your EvoLink API key](https://evolink.ai/signup?utm_source=github&utm_medium=readme&utm_campaign=Seedance-2.0-Gateway-Service)
+- [Browse Seedance 2.0 prompt examples](https://github.com/EvoLinkAI/awesome-seedance-2.0-prompts)
+- [Read the complete Seedance 2.0 guide](https://github.com/EvoLinkAI/awesome-seedance-2-guide)
+- [Install the Seedance 2.0 OpenClaw skill](https://github.com/EvoLinkAI/seedance2-video-gen-skill-for-openclaw)
+
+```bash
+export EVOLINK_API_KEY="your_key_here"
+
+curl --request POST \
+  --url https://api.evolink.ai/v1/videos/generations \
+  --header "Authorization: Bearer ${EVOLINK_API_KEY}" \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "model": "seedance-2.0-text-to-video",
+    "prompt": "A cinematic aerial shot of a futuristic city at sunrise, smooth camera motion, reflective skyscrapers",
+    "duration": 5,
+    "quality": "720p",
+    "aspect_ratio": "16:9",
+    "generate_audio": true
+  }'
+```
+
 ## What Is Seedance 2.0 Gateway Service?
 
 Seedance 2.0 Gateway Service is a video generation gateway service for creating AI videos from text prompts, images, and multimodal references. Through EvoLink.ai, developers can access the full Seedance 2.0 model family with one consistent API workflow:
