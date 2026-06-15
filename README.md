@@ -22,16 +22,6 @@
   <a href="https://docs.evolink.ai?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">Read Seedance 2.0 API docs</a>
 </p>
 
-## EvoLink Quick Start
-
-This repository is the API conversion path for Seedance traffic:
-
-- Model page: [Seedance 2.0 pricing](https://evolink.ai/seedance-2-0?utm_source=github&utm_medium=readme&utm_campaign=Seedance-2.0-Gateway-Service)
-- API docs: [Seedance 2.0 API docs](https://docs.evolink.ai?utm_source=github&utm_medium=readme&utm_campaign=Seedance-2.0-Gateway-Service)
-- API key: [create an EvoLink API key](https://evolink.ai/signup?utm_source=github&utm_medium=readme&utm_campaign=Seedance-2.0-Gateway-Service)
-- Prompt cookbook: [awesome-seedance-2.0-prompts](https://github.com/EvoLinkAI/awesome-seedance-2.0-prompts)
-- Complete guide: [awesome-seedance-2-guide](https://github.com/EvoLinkAI/awesome-seedance-2-guide)
-
 ## What Is Seedance 2.0 Gateway Service?
 
 Seedance 2.0 Gateway Service is a video generation gateway service for creating AI videos from text prompts, images, and multimodal references. Through EvoLink.ai, developers can access the full Seedance 2.0 model family with one consistent API workflow:
