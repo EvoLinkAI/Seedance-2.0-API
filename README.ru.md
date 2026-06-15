@@ -55,7 +55,7 @@ Seedance 2.0 Gateway Service — это шлюзовый сервис генер
 ```bash
 curl --request POST \
   --url https://api.evolink.ai/v1/videos/generations \
-  --header 'Authorization: Bearer YOUR_API_KEY' \
+  --header "Authorization: Bearer ${EVOLINK_API_KEY}" \
   --header 'Content-Type: application/json' \
   --data '{
     "model": "seedance-2.0-text-to-video",
@@ -175,7 +175,7 @@ GET https://api.evolink.ai/v1/tasks/{task_id}
 ```bash
 curl --request POST \
   --url https://api.evolink.ai/v1/videos/generations \
-  --header 'Authorization: Bearer YOUR_API_KEY' \
+  --header "Authorization: Bearer ${EVOLINK_API_KEY}" \
   --header 'Content-Type: application/json' \
   --data '{
     "model": "seedance-2.0-text-to-video",
@@ -192,7 +192,7 @@ curl --request POST \
 ```bash
 curl --request POST \
   --url https://api.evolink.ai/v1/videos/generations \
-  --header 'Authorization: Bearer YOUR_API_KEY' \
+  --header "Authorization: Bearer ${EVOLINK_API_KEY}" \
   --header 'Content-Type: application/json' \
   --data '{
     "model": "seedance-2.0-image-to-video",
@@ -208,7 +208,7 @@ curl --request POST \
 ```bash
 curl --request POST \
   --url https://api.evolink.ai/v1/videos/generations \
-  --header 'Authorization: Bearer YOUR_API_KEY' \
+  --header "Authorization: Bearer ${EVOLINK_API_KEY}" \
   --header 'Content-Type: application/json' \
   --data '{
     "model": "seedance-2.0-reference-to-video",

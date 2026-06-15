@@ -44,7 +44,7 @@
 ```bash
 curl --request POST \
   --url https://api.evolink.ai/v1/videos/generations \
-  --header 'Authorization: Bearer YOUR_API_KEY' \
+  --header "Authorization: Bearer ${EVOLINK_API_KEY}" \
   --header 'Content-Type: application/json' \
   --data '{
     "model": "seedance-2.0-text-to-video",

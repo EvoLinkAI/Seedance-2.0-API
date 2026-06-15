@@ -50,4 +50,4 @@ If you are building a public demo, internal creative tool, or prompt-iteration w
 
 ---
 
-> **Early Access:** 지금 문서를 기준으로 먼저 연동을 진행할 수 있습니다. Seedance Gateway Service가 정식으로 열리면 Early Access 사용자에게 안내드리겠습니다.
+> **Now Available:** Seedance Gateway Service can be integrated today. Use the examples in this repo to create tasks, poll task status, and retrieve generated video URLs.

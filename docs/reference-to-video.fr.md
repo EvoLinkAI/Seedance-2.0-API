@@ -32,7 +32,7 @@ See also: [Pricing](./pricing.md)
 
 ```
 POST https://api.evolink.ai/v1/videos/generations
-Authorization: Bearer YOUR_API_KEY
+Authorization: Bearer ${EVOLINK_API_KEY}
 Content-Type: application/json
 ```
 
@@ -73,7 +73,7 @@ Content-Type: application/json
 
 #### Video Requirements
 - Supported formats: `.mp4`, `.mov`
-- Resolution: 480p, 720p
+- Resolution: 480p, 720p, 1080p
 - Duration per video: `2` – `15` seconds; max 3 videos; total duration of all videos ≤ `15` seconds
 - Aspect ratio (width/height): `0.4` – `2.5`
 - Width/height pixels: `300` – `6000` px
@@ -98,7 +98,7 @@ Content-Type: application/json
 | Parameter | Type | Default | Description |
 |-----------|------|---------|-------------|
 | `duration` | integer | `5` | Video duration in seconds. Range: `4`–`15`. Duration directly affects billing |
-| `quality` | string | `720p` | Video resolution. Options: `480p`, `720p` |
+| `quality` | string | `720p` | Video resolution. Options: `480p`, `720p`, `1080p` for standard models; fast models support `480p` and `720p` |
 | `aspect_ratio` | string | `16:9` | Aspect ratio. Options: `16:9`, `9:16`, `1:1`, `4:3`, `3:4`, `21:9`, `adaptive`. When set to `adaptive`, priority order: video > image > prompt |
 | `generate_audio` | boolean | `true` | Whether to generate synchronized audio; no extra charge |
 | `callback_url` | string | — | HTTPS callback URL; triggered when the task completes, fails, or is cancelled |
@@ -148,7 +148,7 @@ Content-Type: application/json
 
 ```
 GET https://api.evolink.ai/v1/tasks/{task_id}
-Authorization: Bearer YOUR_API_KEY
+Authorization: Bearer ${EVOLINK_API_KEY}
 ```
 
 **Success:** `status: "completed"`, the `results` array contains the video URL.
@@ -271,7 +271,7 @@ Cost = (Billable input duration + Output video duration) (seconds) × Resolution
 
 ```
 POST https://api.evolink.ai/v1/videos/generations
-Authorization: Bearer YOUR_API_KEY
+Authorization: Bearer ${EVOLINK_API_KEY}
 Content-Type: application/json
 ```
 
@@ -307,7 +307,7 @@ Content-Type: application/json
 #### Video Requirements
 
 - Formats: mp4, mov
-- Resolution: 480p, 720p
+- Resolution: 480p, 720p, 1080p
 - Duration per video: 2 -- 15 seconds; max 3 videos; total duration of all videos <= 15 seconds
 - Aspect ratio (width/height): 0.4 -- 2.5
 - Width/height pixels: 300 -- 6,000 px
@@ -340,7 +340,7 @@ Content-Type: application/json
 | Parameter | Type | Default | Description |
 |-----------|------|---------|-------------|
 | `duration` | integer | `5` | Video duration in seconds. Range: `4`--`15`. Duration directly affects billing |
-| `quality` | string | `720p` | Video resolution. Options: `480p`, `720p` |
+| `quality` | string | `720p` | Video resolution. Options: `480p`, `720p`, `1080p` for standard models; fast models support `480p` and `720p` |
 | `aspect_ratio` | string | `16:9` | Aspect ratio. Options: `16:9`, `9:16`, `1:1`, `4:3`, `3:4`, `21:9`, `adaptive`. When set to `adaptive`, priority order: video > image > prompt |
 | `generate_audio` | boolean | `true` | Whether to generate synchronized audio at no additional cost |
 | `callback_url` | string | -- | HTTPS callback URL. Triggered when the task completes, fails, or is cancelled |
@@ -390,7 +390,7 @@ Content-Type: application/json
 
 ```
 GET https://api.evolink.ai/v1/tasks/{task_id}
-Authorization: Bearer YOUR_API_KEY
+Authorization: Bearer ${EVOLINK_API_KEY}
 ```
 
 **Success:** `status: "completed"` -- the `results` array contains the video URL.
@@ -510,4 +510,4 @@ Cost = (Billable input duration + Output video duration) (seconds) × Resolution
 
 ---
 
-> **Early Access :** Vous pouvez intégrer l’API dès maintenant en vous appuyant sur la documentation. Dès que Seedance Gateway Service sera officiellement ouvert, nous informerons les utilisateurs Early Access.
+> **Now Available:** Seedance Gateway Service can be integrated today. Use the examples in this repo to create tasks, poll task status, and retrieve generated video URLs.

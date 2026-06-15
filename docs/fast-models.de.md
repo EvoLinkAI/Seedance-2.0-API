@@ -50,4 +50,4 @@ If you are building a public demo, internal creative tool, or prompt-iteration w
 
 ---
 
-> **Early Access:** Du kannst die Integration schon jetzt anhand der Dokumentation vorbereiten. Sobald der Seedance Gateway Service offiziell geöffnet wird, benachrichtigen wir Early-Access-Nutzer.
+> **Now Available:** Seedance Gateway Service can be integrated today. Use the examples in this repo to create tasks, poll task status, and retrieve generated video URLs.

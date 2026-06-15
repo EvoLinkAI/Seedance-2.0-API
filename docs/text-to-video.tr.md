@@ -41,7 +41,7 @@ GET https://api.evolink.ai/v1/tasks/{task_id}
 
 ```
 POST https://api.evolink.ai/v1/videos/generations
-Authorization: Bearer YOUR_API_KEY
+Authorization: Bearer ${EVOLINK_API_KEY}
 Content-Type: application/json
 ```
 
@@ -61,7 +61,7 @@ Content-Type: application/json
 | Parameter | Type | Default | Description |
 |-----------|------|---------|-------------|
 | `duration` | integer | `5` | Video duration in seconds. Range: `4`–`15`. Duration directly affects billing |
-| `quality` | string | `720p` | Video resolution. Options: `480p`, `720p` |
+| `quality` | string | `720p` | Video resolution. Options: `480p`, `720p`, `1080p` for standard models; fast models support `480p` and `720p` |
 | `aspect_ratio` | string | `16:9` | Aspect ratio. Options: `16:9`, `9:16`, `1:1`, `4:3`, `3:4`, `21:9`, `adaptive`. When set to `adaptive`, the model intelligently selects based on the prompt |
 | `generate_audio` | boolean | `true` | Whether to generate synchronized audio (voice, sound effects, background music) at no extra charge. It is recommended to place dialogue within double quotes for better results |
 | `callback_url` | string | — | HTTPS callback URL; triggered when the task completes or fails |
@@ -119,7 +119,7 @@ Passed via the `model_params` object:
 
 ```
 GET https://api.evolink.ai/v1/tasks/{task_id}
-Authorization: Bearer YOUR_API_KEY
+Authorization: Bearer ${EVOLINK_API_KEY}
 ```
 
 **Success:** `status: "completed"`, the `results` array contains the video URL.
@@ -191,7 +191,7 @@ Cost = output video duration (seconds) × resolution unit price
 
 ```
 POST https://api.evolink.ai/v1/videos/generations
-Authorization: Bearer YOUR_API_KEY
+Authorization: Bearer ${EVOLINK_API_KEY}
 Content-Type: application/json
 ```
 
@@ -211,7 +211,7 @@ Content-Type: application/json
 | Parameter | Type | Default | Description |
 |-----------|------|---------|-------------|
 | `duration` | integer | `5` | Video duration in seconds. Range: `4`--`15`. Duration directly affects billing |
-| `quality` | string | `720p` | Video resolution. Options: `480p`, `720p` |
+| `quality` | string | `720p` | Video resolution. Options: `480p`, `720p`, `1080p` for standard models; fast models support `480p` and `720p` |
 | `aspect_ratio` | string | `16:9` | Aspect ratio. Options: `16:9`, `9:16`, `1:1`, `4:3`, `3:4`, `21:9`, `adaptive`. When set to `adaptive`, the model intelligently selects based on the prompt |
 | `generate_audio` | boolean | `true` | Whether to generate synchronized audio (voice, sound effects, background music) at no additional cost. Tip: place dialogue within double quotes for better results |
 | `callback_url` | string | -- | HTTPS callback URL. A notification is sent when the task completes or fails |
@@ -269,7 +269,7 @@ Passed via the `model_params` object:
 
 ```
 GET https://api.evolink.ai/v1/tasks/{task_id}
-Authorization: Bearer YOUR_API_KEY
+Authorization: Bearer ${EVOLINK_API_KEY}
 ```
 
 **Success:** `status: "completed"` -- the `results` array contains the video URL.
@@ -341,4 +341,4 @@ Cost = Output video duration (seconds) x Resolution unit price
 
 ---
 
-> **Early Access:** Dokümantasyona göre entegrasyonu şimdiden hazırlayabilirsiniz. Seedance Gateway Service resmi olarak açıldığında Early Access kullanıcılarına haber vereceğiz.
+> **Now Available:** Seedance Gateway Service can be integrated today. Use the examples in this repo to create tasks, poll task status, and retrieve generated video URLs.

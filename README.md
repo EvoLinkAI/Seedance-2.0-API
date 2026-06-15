@@ -18,8 +18,8 @@
 
 <p align="left">
   <a href="https://evolink.ai/seedance-2-0?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">View Seedance 2.0 Pricing</a> ·
-  <a href="https://evolink.ai/signup?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">Get API Key</a> ·
-  <a href="https://docs.evolink.ai?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">Read API Docs</a>
+  <a href="https://evolink.ai/signup?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">Get your API key</a> ·
+  <a href="https://docs.evolink.ai?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">Read Seedance 2.0 API docs</a>
 </p>
 
 ## EvoLink Quick Start
@@ -44,7 +44,6 @@ Seedance 2.0 Gateway Service is a video generation gateway service for creating 
 This repository is designed for developers who want to:
 
 - understand Seedance 2.0 Gateway Service pricing and model differences
-- rank for searches like `Seedance 2.0 API`, `Seedance 2 API price`, and `Seedance API pricing`
 - compare text-to-video, image-to-video, and reference-to-video modes
 - understand the difference between standard and fast models
 - copy production-ready request examples
@@ -70,9 +69,11 @@ This repository is designed for developers who want to:
 Create a Seedance 2.0 video task with a single API call:
 
 ```bash
+export EVOLINK_API_KEY="your_key_here"
+
 curl --request POST \
   --url https://api.evolink.ai/v1/videos/generations \
-  --header 'Authorization: Bearer YOUR_API_KEY' \
+  --header "Authorization: Bearer ${EVOLINK_API_KEY}" \
   --header 'Content-Type: application/json' \
   --data '{
     "model": "seedance-2.0-text-to-video",
@@ -96,6 +97,21 @@ Example response:
   "type": "video"
 }
 ```
+
+## Full First-Run Flow
+
+Seedance generation is asynchronous. A production integration should create a task, store the task ID, poll or receive a callback, and then save the final video URL.
+
+```bash
+export EVOLINK_API_KEY="your_key_here"
+bash examples/curl/complete-flow.sh
+```
+
+Complete examples:
+
+- [cURL complete flow](./examples/curl/complete-flow.sh)
+- [Python complete flow](./examples/python/complete_flow.py)
+- [JavaScript complete flow](./examples/javascript/complete-flow.mjs)
 
 ## Unified API Workflow
 
@@ -121,6 +137,12 @@ When the task is completed, the response returns generated video URLs in the res
 
 You can pass `callback_url` in the create request if you want asynchronous notifications instead of polling only.
 
+Detailed lifecycle docs:
+
+- [Response Schema](./docs/response-schema.md)
+- [Error Handling](./docs/errors.md)
+- [Callback / Webhook](./docs/callbacks.md)
+
 ## Model Comparison
 
 | Model | Input Type | Best For | Notes |
@@ -138,8 +160,8 @@ You can pass `callback_url` in the create request if you want asynchronous notif
 |---|---|---|
 | `model` | string | selects the Seedance 2.0 model |
 | `prompt` | string | generation prompt, supported across all model families |
-| `duration` | integer | output video duration, `4-15` seconds or `-1` for smart duration |
-| `quality` | string | `480p` or `720p` |
+| `duration` | integer | output video duration, `4-15` seconds |
+| `quality` | string | `480p`, `720p`, or `1080p`; `1080p` is only supported by standard models |
 | `aspect_ratio` | string | `16:9`, `9:16`, `1:1`, `4:3`, `3:4`, `21:9`, or `adaptive` |
 | `generate_audio` | boolean | whether synchronized audio should be generated |
 | `callback_url` | string | optional HTTPS callback URL |
@@ -212,7 +234,6 @@ cost = (input reference video duration + output video duration) × resolution pr
 
 - audio generation has no extra charge
 - `web_search` costs `0.04` credits per actual search call
-- smart duration (`-1`) reserves 10 seconds first, then settles by actual output length
 - 1 credit = 10,000 UC = ¥0.10
 
 Detailed breakdown:
@@ -225,7 +246,7 @@ Detailed breakdown:
 ```bash
 curl --request POST \
   --url https://api.evolink.ai/v1/videos/generations \
-  --header 'Authorization: Bearer YOUR_API_KEY' \
+  --header "Authorization: Bearer ${EVOLINK_API_KEY}" \
   --header 'Content-Type: application/json' \
   --data '{
     "model": "seedance-2.0-text-to-video",
@@ -242,7 +263,7 @@ curl --request POST \
 ```bash
 curl --request POST \
   --url https://api.evolink.ai/v1/videos/generations \
-  --header 'Authorization: Bearer YOUR_API_KEY' \
+  --header "Authorization: Bearer ${EVOLINK_API_KEY}" \
   --header 'Content-Type: application/json' \
   --data '{
     "model": "seedance-2.0-image-to-video",
@@ -258,7 +279,7 @@ curl --request POST \
 ```bash
 curl --request POST \
   --url https://api.evolink.ai/v1/videos/generations \
-  --header 'Authorization: Bearer YOUR_API_KEY' \
+  --header "Authorization: Bearer ${EVOLINK_API_KEY}" \
   --header 'Content-Type: application/json' \
   --data '{
     "model": "seedance-2.0-reference-to-video",
@@ -281,11 +302,13 @@ More code:
 ## Python Example
 
 ```python
+import os
 import requests
 import time
 
+api_key = os.environ["EVOLINK_API_KEY"]
 headers = {
-    "Authorization": "Bearer YOUR_API_KEY",
+    "Authorization": f"Bearer {api_key}",
     "Content-Type": "application/json"
 }
 
@@ -306,7 +329,7 @@ task_id = create_resp["id"]
 while True:
     task = requests.get(
         f"https://api.evolink.ai/v1/tasks/{task_id}",
-        headers={"Authorization": "Bearer YOUR_API_KEY"}
+        headers={"Authorization": f"Bearer {api_key}"}
     ).json()
 
     if task.get("status") == "completed":
@@ -341,6 +364,8 @@ const createResp = await fetch("https://api.evolink.ai/v1/videos/generations", {
 const task = await createResp.json();
 console.log(task);
 ```
+
+For production-ready polling and error handling, use [examples/javascript/complete-flow.mjs](./examples/javascript/complete-flow.mjs).
 
 ## Best Use Cases
 
@@ -381,7 +406,7 @@ Generated video URLs are valid for 24 hours. Save them promptly.
 ## Repository Structure
 
 ```text
-seedance-2-api/
+Seedance-2.0-Gateway-Service/
 ├── README.md
 ├── assets/
 │   └── banner.jpg
@@ -390,10 +415,13 @@ seedance-2-api/
 │   ├── image-to-video.md
 │   ├── reference-to-video.md
 │   ├── fast-models.md
+│   ├── response-schema.md
+│   ├── errors.md
+│   ├── callbacks.md
 │   └── pricing.md
 └── examples/
     ├── curl/
-    ├── nodejs/
+    ├── javascript/
     └── python/
 ```
 
@@ -403,6 +431,9 @@ seedance-2-api/
 - [Image-to-Video Guide](./docs/image-to-video.md)
 - [Reference-to-Video Guide](./docs/reference-to-video.md)
 - [Fast Models Guide](./docs/fast-models.md)
+- [Response Schema](./docs/response-schema.md)
+- [Error Handling](./docs/errors.md)
+- [Callback / Webhook](./docs/callbacks.md)
 - [Pricing](./docs/pricing.md)
 
 These docs now cover both **standard** and **fast** variants for text-to-video, image-to-video, and reference-to-video.
@@ -416,7 +447,7 @@ These docs now cover both **standard** and **fast** variants for text-to-video, 
 ## Related Links
 
 - [Seedance 2.0 Pricing](https://evolink.ai/seedance-2-0?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api)
-- [Get API Key](https://evolink.ai/signup?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api)
+- [Get your API key](https://evolink.ai/signup?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api)
 - [EvoLink.ai](https://evolink.ai?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api)
 
 > Please review [Regional Availability](./docs/regional-availability.md) before integration.
@@ -424,7 +455,3 @@ These docs now cover both **standard** and **fast** variants for text-to-video, 
 ## License
 
 MIT
-
----
-
-> **Now Available:** You can integrate against the docs today. Once Seedance Gateway Service opens up, we’ll notify early-access users.

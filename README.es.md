@@ -55,7 +55,7 @@ Este repositorio está pensado para quienes quieren:
 ```bash
 curl --request POST \
   --url https://api.evolink.ai/v1/videos/generations \
-  --header 'Authorization: Bearer YOUR_API_KEY' \
+  --header "Authorization: Bearer ${EVOLINK_API_KEY}" \
   --header 'Content-Type: application/json' \
   --data '{
     "model": "seedance-2.0-text-to-video",
@@ -174,7 +174,7 @@ costo = (duración del video de referencia + duración del video de salida) × p
 ```bash
 curl --request POST \
   --url https://api.evolink.ai/v1/videos/generations \
-  --header 'Authorization: Bearer YOUR_API_KEY' \
+  --header "Authorization: Bearer ${EVOLINK_API_KEY}" \
   --header 'Content-Type: application/json' \
   --data '{
     "model": "seedance-2.0-text-to-video",
@@ -191,7 +191,7 @@ curl --request POST \
 ```bash
 curl --request POST \
   --url https://api.evolink.ai/v1/videos/generations \
-  --header 'Authorization: Bearer YOUR_API_KEY' \
+  --header "Authorization: Bearer ${EVOLINK_API_KEY}" \
   --header 'Content-Type: application/json' \
   --data '{
     "model": "seedance-2.0-image-to-video",
@@ -207,7 +207,7 @@ curl --request POST \
 ```bash
 curl --request POST \
   --url https://api.evolink.ai/v1/videos/generations \
-  --header 'Authorization: Bearer YOUR_API_KEY' \
+  --header "Authorization: Bearer ${EVOLINK_API_KEY}" \
   --header 'Content-Type: application/json' \
   --data '{
     "model": "seedance-2.0-reference-to-video",

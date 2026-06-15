@@ -1,9 +1,14 @@
+import os
 import requests
+
+api_key = os.environ.get("EVOLINK_API_KEY")
+if not api_key:
+    raise SystemExit("Set EVOLINK_API_KEY first")
 
 response = requests.post(
     'https://api.evolink.ai/v1/videos/generations',
     headers={
-        'Authorization': 'Bearer YOUR_API_KEY',
+        'Authorization': f'Bearer {api_key}',
         'Content-Type': 'application/json'
     },
     json={
