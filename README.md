@@ -84,7 +84,7 @@ This repository is designed for developers who want to:
 - `seedance-2.0-fast-image-to-video`
 - `seedance-2.0-fast-reference-to-video`
 
-## Quick Start
+## Create a Video Task
 
 Create a Seedance 2.0 video task with a single API call:
 
