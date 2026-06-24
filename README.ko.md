@@ -1,15 +1,15 @@
 [English](./README.md) | [简体中文](./README.zh-CN.md) | [繁體中文](./README.zh-TW.md) | [Español](./README.es.md) | [Deutsch](./README.de.md) | [Français](./README.fr.md) | [日本語](./README.ja.md) | [한국어](./README.ko.md) | [Türkçe](./README.tr.md) | [Русский](./README.ru.md)
 
-# Seedance 2.0 Gateway Service 가격, 모델, 비디오 생성 가이드
+# Seedance 2.5 Gateway Service 가격, 모델, 비디오 생성 가이드
 
 <p align="center">
-  <a href="https://evolink.ai/seedance-2-0?utm_source=github&utm_medium=banner&utm_campaign=seedance-2-api">
-    <img src="./assets/banner.jpg" alt="Seedance 2.0 Human Face Now Available Try Now" width="100%" />
+  <a href="https://evolink.ai/launch/seedance-2-5?utm_source=github&utm_medium=banner&utm_campaign=Seedance-2.5-Gateway-Service">
+    <img src="./assets/banner.jpg" alt="Seedance 2.5 Early Access" width="100%" />
   </a>
 </p>
 
 <p align="center">
-  <strong>Seedance 2.0<br>Human Face Now Available<br>Try Now</strong>
+  <strong>Seedance 2.5 Early Access<br>Current Seedance 2 API Path<br>Get Early Access</strong>
 </p>
 
 <p align="center">
@@ -17,12 +17,12 @@
 </p>
 
 <p align="left">
-  <a href="https://evolink.ai/seedance-2-0?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">Seedance 2.0 가격 보기</a> ·
+  <a href="https://evolink.ai/launch/seedance-2-5?utm_source=github&utm_medium=readme&utm_campaign=Seedance-2.5-Gateway-Service">Seedance 2.5 가격 보기</a> ·
   <a href="https://evolink.ai/signup?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">API 키 받기</a> ·
   <a href="https://docs.evolink.ai?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">API 문서 읽기</a>
 </p>
 
-## Seedance 2.0 Gateway Service란?
+## Seedance 2.5 Gateway Service란?
 
 Seedance 2.0 Gateway Service는 텍스트 프롬프트, 이미지, 멀티모달 레퍼런스를 기반으로 AI 비디오를 생성하는 게이트웨이 서비스입니다. EvoLink.ai를 통해 개발자는 통일된 API 흐름으로 Seedance 2.0 모델 전체를 사용할 수 있습니다.
 
@@ -40,7 +40,7 @@ Seedance 2.0 Gateway Service는 텍스트 프롬프트, 이미지, 멀티모달 
 - 도입 전에 비용을 추산하고 싶은 경우
 - EvoLinkAI GitHub 생태계 내의 관련 Seedance 리소스도 함께 보고 싶은 경우
 
-## 지원되는 Seedance 2.0 모델
+## 지원되는 Seedance 2.5 모델
 
 ### 표준 모델
 
@@ -55,6 +55,9 @@ Seedance 2.0 Gateway Service는 텍스트 프롬프트, 이미지, 멀티모달 
 - `seedance-2.0-fast-reference-to-video`
 
 ## 빠른 시작
+
+> [!NOTE]
+> **Get Seedance 2.5 Early Access:** Seedance 2.5 early access is open through EvoLink. Use the current Seedance 2 API path while the 2.5 rollout is opening: https://evolink.ai/launch/seedance-2-5?utm_source=github&utm_medium=readme&utm_campaign=Seedance-2.5-Gateway-Service
 
 ```bash
 curl --request POST \
@@ -264,7 +267,7 @@ fast 모델은 같은 요청 패턴을 따르지만 더 빠른 반복 작업에 
 ## 저장소 구조
 
 ```text
-Seedance-2.0-Gateway-Service/
+Seedance-2.5-Gateway-Service/
 ├── README.md
 ├── README.zh-CN.md
 ├── README.zh-TW.md
@@ -291,13 +294,13 @@ Seedance-2.0-Gateway-Service/
 
 ## 관련 Seedance 저장소
 
-- [Seedance 2.0 Gateway Service: Price and Guide](https://github.com/EvoLinkAI/Seedance-2.0-Gateway-Service)
+- [Seedance 2.5 Gateway Service: Early Access and Current API Path](https://github.com/EvoLinkAI/Seedance-2.5-Gateway-Service)
 - [Seedance 2 Video Gen Skill for OpenClaw](https://github.com/EvoLinkAI/seedance2-video-gen-skill-for-openclaw)
-- [Awesome Seedance 2 Guide](https://github.com/EvoLinkAI/awesome-seedance-2-guide)
+- [Awesome Seedance 2 Guide](https://github.com/EvoLinkAI/awesome-seedance-2.5-guide)
 
 ## 관련 링크
 
-- [Seedance 2.0 Pricing](https://evolink.ai/seedance-2-0?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api)
+- [Seedance 2.5 Early Access](https://evolink.ai/launch/seedance-2-5?utm_source=github&utm_medium=readme&utm_campaign=Seedance-2.5-Gateway-Service)
 - [Get API Key](https://evolink.ai/signup?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api)
 - [EvoLink.ai](https://evolink.ai?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api)
 

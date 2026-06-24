@@ -3,12 +3,12 @@
 ---
 
 <p align="center">
-  <a href="https://evolink.ai/seedance-2-0?utm_source=github&utm_medium=banner&utm_campaign=Seedance-2.0-API">
+  <a href="https://evolink.ai/launch/seedance-2-5?utm_source=github&utm_medium=banner&utm_campaign=Seedance-2.5-Gateway-Service">
     <img src="./assets/banner.jpg" alt="Seedance 2.0 Now Available">
   </a>
 </p>
 
-# 🎬 Seedance 2.0 Gateway Service
+# 🎬 Seedance 2.5 Gateway Service
 
 > **O Seedance 2.0 Gateway Service já está disponível.** 
 >
@@ -16,12 +16,15 @@
 
 ---
 
+> [!NOTE]
+> **Get Seedance 2.5 Early Access:** Seedance 2.5 early access is open through EvoLink. Use the current Seedance 2 API path while the 2.5 rollout is opening: https://evolink.ai/launch/seedance-2-5?utm_source=github&utm_medium=readme&utm_campaign=Seedance-2.5-Gateway-Service
+
 ## 🎯 Sobre a API
 
 O Seedance 2.0 Gateway Service permite que você integre geração de vídeo controlável em seus produtos.
 
 <p align="center">
-  <a href="https://evolink.ai/seedance-2-0?utm_source=github&utm_medium=readme&utm_campaign=Seedance-2.0-API"><strong>👉 Comece hoje mesmo →</strong></a>
+  <a href="https://evolink.ai/launch/seedance-2-5?utm_source=github&utm_medium=readme&utm_campaign=Seedance-2.5-Gateway-Service"><strong>👉 Comece hoje mesmo →</strong></a>
 </p>
 
 > Por favor revise a [Disponibilidade Regional](./docs/regional-availability.pt.md) antes da integração.

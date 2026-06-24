@@ -1,10 +1,10 @@
 [English](./README.md) | [简体中文](./README.zh-CN.md) | [繁體中文](./README.zh-TW.md) | [Español](./README.es.md) | [Deutsch](./README.de.md) | [Français](./README.fr.md) | [日本語](./README.ja.md) | [한국어](./README.ko.md) | [Türkçe](./README.tr.md) | [Русский](./README.ru.md)
 
-# Guide des prix, modèles et de la génération vidéo avec le Seedance 2.0 Gateway Service
+# Guide des prix, modèles et de la génération vidéo avec le Seedance 2.5 Gateway Service
 
 <p align="center">
-  <a href="https://evolink.ai/seedance-2-0?utm_source=github&utm_medium=banner&utm_campaign=seedance-2-api">
-    <img src="./assets/banner.jpg" alt="Seedance 2.0 Human Face Now Available Try Now" width="100%" />
+  <a href="https://evolink.ai/launch/seedance-2-5?utm_source=github&utm_medium=banner&utm_campaign=Seedance-2.5-Gateway-Service">
+    <img src="./assets/banner.jpg" alt="Seedance 2.5 Early Access" width="100%" />
   </a>
 </p>
 
@@ -13,12 +13,12 @@
 </p>
 
 <p align="left">
-  <a href="https://evolink.ai/seedance-2-0?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">Voir les prix de Seedance 2.0</a> ·
+  <a href="https://evolink.ai/launch/seedance-2-5?utm_source=github&utm_medium=readme&utm_campaign=Seedance-2.5-Gateway-Service">Voir les prix de Seedance 2.5</a> ·
   <a href="https://evolink.ai/signup?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">Obtenir une API Key</a> ·
   <a href="https://docs.evolink.ai?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">Lire la documentation API</a>
 </p>
 
-## Qu’est-ce que le Seedance 2.0 Gateway Service ?
+## Qu’est-ce que le Seedance 2.5 Gateway Service ?
 
 Seedance 2.0 Gateway Service est un service de génération vidéo pour créer des vidéos IA à partir de prompts texte, d’images et de références multimodales. Via EvoLink.ai, les développeurs peuvent accéder à toute la famille de modèles Seedance 2.0 avec un workflow API cohérent :
 
@@ -36,7 +36,7 @@ Ce dépôt s’adresse aux développeurs qui veulent :
 - estimer les coûts avant intégration
 - découvrir d’autres ressources Seedance dans l’écosystème GitHub d’EvoLinkAI
 
-## Modèles Seedance 2.0 pris en charge
+## Modèles Seedance 2.5 pris en charge
 
 ### Modèles standard
 
@@ -51,6 +51,9 @@ Ce dépôt s’adresse aux développeurs qui veulent :
 - `seedance-2.0-fast-reference-to-video`
 
 ## Démarrage rapide
+
+> [!NOTE]
+> **Get Seedance 2.5 Early Access:** Seedance 2.5 early access is open through EvoLink. Use the current Seedance 2 API path while the 2.5 rollout is opening: https://evolink.ai/launch/seedance-2-5?utm_source=github&utm_medium=readme&utm_campaign=Seedance-2.5-Gateway-Service
 
 ```bash
 curl --request POST \
@@ -260,7 +263,7 @@ Les URL des vidéos générées restent valides pendant 24 heures.
 ## Structure du dépôt
 
 ```text
-Seedance-2.0-Gateway-Service/
+Seedance-2.5-Gateway-Service/
 ├── README.md
 ├── README.zh-CN.md
 ├── README.zh-TW.md
@@ -287,13 +290,13 @@ Seedance-2.0-Gateway-Service/
 
 ## Dépôts Seedance associés
 
-- [Seedance 2.0 Gateway Service: Price and Guide](https://github.com/EvoLinkAI/Seedance-2.0-Gateway-Service)
+- [Seedance 2.5 Gateway Service: Early Access and Current API Path](https://github.com/EvoLinkAI/Seedance-2.5-Gateway-Service)
 - [Seedance 2 Video Gen Skill for OpenClaw](https://github.com/EvoLinkAI/seedance2-video-gen-skill-for-openclaw)
-- [Awesome Seedance 2 Guide](https://github.com/EvoLinkAI/awesome-seedance-2-guide)
+- [Awesome Seedance 2 Guide](https://github.com/EvoLinkAI/awesome-seedance-2.5-guide)
 
 ## Liens associés
 
-- [Seedance 2.0 Pricing](https://evolink.ai/seedance-2-0?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api)
+- [Seedance 2.5 Early Access](https://evolink.ai/launch/seedance-2-5?utm_source=github&utm_medium=readme&utm_campaign=Seedance-2.5-Gateway-Service)
 - [Get API Key](https://evolink.ai/signup?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api)
 - [EvoLink.ai](https://evolink.ai?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api)
 

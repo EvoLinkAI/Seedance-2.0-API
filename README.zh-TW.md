@@ -1,10 +1,10 @@
 [English](./README.md) | [简体中文](./README.zh-CN.md) | [繁體中文](./README.zh-TW.md) | [Español](./README.es.md) | [Deutsch](./README.de.md) | [Français](./README.fr.md) | [日本語](./README.ja.md) | [한국어](./README.ko.md) | [Türkçe](./README.tr.md) | [Русский](./README.ru.md)
 
-# Seedance 2.0 Gateway Service：價格、模型與影片生成指南
+# Seedance 2.5 Gateway Service：價格、模型與影片生成指南
 
 <p align="center">
-  <a href="https://evolink.ai/seedance-2-0?utm_source=github&utm_medium=banner&utm_campaign=seedance-2-api">
-    <img src="./assets/banner.jpg" alt="Seedance 2.0 Human Face Now Available Try Now" width="100%" />
+  <a href="https://evolink.ai/launch/seedance-2-5?utm_source=github&utm_medium=banner&utm_campaign=Seedance-2.5-Gateway-Service">
+    <img src="./assets/banner.jpg" alt="Seedance 2.5 Early Access" width="100%" />
   </a>
 </p>
 
@@ -13,12 +13,12 @@
 </p>
 
 <p align="left">
-  <a href="https://evolink.ai/seedance-2-0?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">查看 Seedance 2.0 價格</a> ·
+  <a href="https://evolink.ai/launch/seedance-2-5?utm_source=github&utm_medium=readme&utm_campaign=Seedance-2.5-Gateway-Service">查看 Seedance 2.5 價格</a> ·
   <a href="https://evolink.ai/signup?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">取得 API Key</a> ·
   <a href="https://docs.evolink.ai?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api">閱讀 API 文件</a>
 </p>
 
-## 什麼是 Seedance 2.0 Gateway Service？
+## 什麼是 Seedance 2.5 Gateway Service？
 
 Seedance 2.0 Gateway Service 是一套 AI 影片生成服務，可透過文字提示、圖片與多模態參考素材建立影片。透過 EvoLink.ai，開發者可以用一致的工作流程存取完整的 Seedance 2.0 模型家族：
 
@@ -36,7 +36,7 @@ Seedance 2.0 Gateway Service 是一套 AI 影片生成服務，可透過文字�
 - 在正式接入前先估算價格
 - 尋找 EvoLinkAI Seedance 生態中的其他相關資源
 
-## 支援的 Seedance 2.0 模型
+## 支援的 Seedance 2.5 模型
 
 ### 標準模型
 
@@ -53,6 +53,9 @@ Seedance 2.0 Gateway Service 是一套 AI 影片生成服務，可透過文字�
 ## 快速開始
 
 使用一次呼叫建立 Seedance 2.0 影片生成任務：
+
+> [!NOTE]
+> **Get Seedance 2.5 Early Access:** Seedance 2.5 early access is open through EvoLink. Use the current Seedance 2 API path while the 2.5 rollout is opening: https://evolink.ai/launch/seedance-2-5?utm_source=github&utm_medium=readme&utm_campaign=Seedance-2.5-Gateway-Service
 
 ```bash
 curl --request POST \
@@ -368,7 +371,7 @@ fast 模型採用相同的請求模式，但更適合快速迭代。你可以依
 ## 倉庫結構
 
 ```text
-Seedance-2.0-Gateway-Service/
+Seedance-2.5-Gateway-Service/
 ├── README.md
 ├── README.zh-CN.md
 ├── README.zh-TW.md
@@ -395,13 +398,13 @@ Seedance-2.0-Gateway-Service/
 
 ## 相關 Seedance 倉庫
 
-- [Seedance 2.0 Gateway Service: Price and Guide](https://github.com/EvoLinkAI/Seedance-2.0-Gateway-Service)
+- [Seedance 2.5 Gateway Service: Early Access and Current API Path](https://github.com/EvoLinkAI/Seedance-2.5-Gateway-Service)
 - [Seedance 2 Video Gen Skill for OpenClaw](https://github.com/EvoLinkAI/seedance2-video-gen-skill-for-openclaw)
-- [Awesome Seedance 2 Guide](https://github.com/EvoLinkAI/awesome-seedance-2-guide)
+- [Awesome Seedance 2 Guide](https://github.com/EvoLinkAI/awesome-seedance-2.5-guide)
 
 ## 相關連結
 
-- [Seedance 2.0 Pricing](https://evolink.ai/seedance-2-0?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api)
+- [Seedance 2.5 Early Access](https://evolink.ai/launch/seedance-2-5?utm_source=github&utm_medium=readme&utm_campaign=Seedance-2.5-Gateway-Service)
 - [Get API Key](https://evolink.ai/signup?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api)
 - [EvoLink.ai](https://evolink.ai?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api)
 
